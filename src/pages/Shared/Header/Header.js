@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './Header.css'
 const Header = () => {
     return (
         <>
 
-            <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
+            <Navbar className='nav' collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link}
                         to="/">
-                        <img src='https://www.linkpicture.com/q/download_419.png' alt="" />
+                        <img src='https://www.linkpicture.com/q/download_420.png' alt="" />
 
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
