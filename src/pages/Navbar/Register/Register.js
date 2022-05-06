@@ -1,18 +1,45 @@
 import React from 'react';
+import { Button, Form } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    const navigate = useNavigate();
+
+    const navigateLogin = event => {
+        navigate('/login');
+    }
+
+    const handleRegister = event => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.email.value;
+    }
+
     return (
-        <div>
-            <h3>Please Register </h3>
-            <form>
-                <input type="text" name="name" id="" placeholder='Your Name' />
-                <br />
-                <input type="email" name="email" id="" placeholder='Email Address' required />
-                <br />
-                <input type="password" name="password" id="" placeholder='Password' required />
-                <br />
-                <input type="submit" value="Register" />
-            </form>
+        <div className='container w-50 mx-auto'>
+            <h3 className='text-success'>Please Register </h3>
+            <Form onSubmit={handleRegister}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="text" name="name" placeholder="Your Name" />
+
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="email" placeholder="Enter email" required />
+
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Control type="password" placeholder="Password" required />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <Button className='w-100' variant="primary" type="submit">
+                    Register
+                </Button>
+            </Form>
+            <p>Already have an account ?<Link to='/login' className='text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
         </div>
     );
 };
