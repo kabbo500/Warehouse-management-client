@@ -1,0 +1,82 @@
+[
+    {
+        "img": "https://www.linkpicture.com/q/2019-bmw-z4-m40i-coupe-render-8.jpg",
+        "name": "Nissan petrol",
+        "price": "25000000",
+        "supplier": "Nissan automobile",
+        "description": "4.4 litter petrol engine 8-speed auto",
+        "quantity": 7
+    },
+    {
+        "img": "https://www.linkpicture.com/q/2019-bmw-z4-m40i-coupe-render-7.jpg",
+        "name": "Nissan x-trail",
+        "price": "4500000",
+        "supplier": "Nissan automobile",
+        "description": "2.5 litter turbo petrol engine 8-speed auto",
+        "quantity": 10
+    },
+    {
+        "img": "https://www.linkpicture.com/q/s-class.jpg",
+        "name": "Marcedes s-class",
+        "price": "25000000",
+        "supplier": "Marcedes automobile",
+        "description": "4.5 litter petrol engine 9-speed auto",
+        "quantity": 5
+    },
+    {
+        "img": "https://www.linkpicture.com/q/crown.jpg",
+        "name": "Toyota crown",
+        "price": "15000000",
+        "supplier": "Toyota automobile",
+        "description": "2 litter turbo petrol engine 8-speed auto",
+        "quantity": 8
+    },
+    {
+        "img": "https://www.linkpicture.com/q/prado.jpg",
+        "name": "Toyota prado",
+        "price": "17000000",
+        "supplier": "Toyota automobile",
+        "description": "3 litter turbo petrol engine 8-speed auto",
+        "quantity": 11
+    },
+    {
+        "img": "https://www.linkpicture.com/q/supra.jpg",
+        "name": "Toyota supra",
+        "price": "15000000",
+        "supplier": "Toyota automobile",
+        "description": "3 litter turbo petrol engine 8-speed auto",
+        "quantity": 6
+    },
+    {
+        "img": "https://www.linkpicture.com/q/hilux.jpg",
+        "name": "Toyota hilux",
+        "price": "7000000",
+        "supplier": "Toyota automobile",
+        "description": "3.5 litter petrol engine 8-speed auto",
+        "quantity": 10
+    },
+    {
+        "img": "https://www.linkpicture.com/q/accord.jpg",
+        "name": "Honda accord",
+        "price": "5500000",
+        "supplier": "Honda automobile",
+        "description": "2 litter petrol engine 8-speed auto",
+        "quantity": 4
+    },
+    {
+        "img": "https://www.linkpicture.com/q/z4_2.jpg",
+        "name": "BMW Z-4",
+        "price": "16000000",
+        "supplier": "BMW automobile",
+        "description": "3.5 litter petrol engine 8-speed auto",
+        "quantity": 3
+    },
+    {
+        "img": "https://www.linkpicture.com/q/camry.jpg",
+        "name": "Toyota camry",
+        "price": "7700000",
+        "supplier": "Toyota automobile",
+        "description": "2 litter petrol engine 8-speed auto",
+        "quantity": 5
+    }
+]
