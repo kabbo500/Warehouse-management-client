@@ -1,22 +1,29 @@
-import React, { useEffect, useState } from 'react';
-import useProducts from '../../../hooks/useProducts';
-import Product from '../Product/Product';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Products.css'
+const Products = ({ product }) => {
+    const { id, img, name, price, description, quantity, supplier } = product
 
+    const navigate = useNavigate();
 
-const Products = () => {
-    const [products, setProducts] = useProducts([]);
-
-
-
+    const navigateToCheckout = id => {
+        navigate(`/product/${id}`)
+    }
     return (
-        <div className='container'>
-            <h1 className='text-primary text-center mt-4'>Products</h1>
-            <div className='row'>
-                {
-                    products.slice(0, 6).map(product => <Product key={product.id} product={product}></Product>)
-                }
+        <div className='product col col-12  col-md-6 col-lg-4 g-4'>
+            <div class="card " style={{ width: "18rem" }}>
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">{name}</h5>
+                    <p class="card-text">{description}</p>
+                    <h5>Price:{price}</h5>
+                    <p>Quantity: {quantity}</p>
+                    <h5>Supplier: {supplier}</h5>
+                    <button onClick={() => navigateToCheckout(id)} className='btn btn-primary'>Update:{name}</button>
+                </div>
             </div>
         </div>
+
     );
 };
 
