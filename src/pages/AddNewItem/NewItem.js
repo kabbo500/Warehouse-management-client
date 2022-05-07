@@ -1,39 +1,37 @@
 import React from 'react';
 
 const NewItem = () => {
-    const handleAddItem = event => {
+    const handleAddUser = event => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
-        const item = { name, email };
 
+        const user = { name, email };
         //send data to the server
-        fetch('http://localhost:5000/item', {
-            method: 'POST',
+        fetch("http://localhost:5000/user", {
+            method: "POST",
             headers: {
-                'content-type': 'application/json'
+                "content-type": "application/json"
             },
-            body: JSON.stringify(item)
+            body: JSON.stringify(user)
         })
             .then(res => res.json())
             .then(data => {
-                console.log('success', data)
+                console.log("success", data)
+                alert("users added successfully")
+                event.target.reset();
             })
-
     }
     return (
-        <div className='container d-flex justify-content-center'>
-            <div>
-                <h2 >Please add new item</h2>
-                <form onSubmit={handleAddItem}>
-
-                    <input className='mb-3' type="text" name='name' placeholder='Name' required />
-                    <br />
-                    <input className='mb-3' type="email" name="email" id="" placeholder='Email' required />
-                    <br />
-                    <input type="submit" value="Add Item" />
-                </form>
-            </div>
+        <div>
+            <h1>Please add a new users</h1>
+            <form onSubmit={handleAddUser}>
+                <input type="text" name='name' placeholder='Name' required />
+                <br />
+                <input type="email" name='email' placeholder='Email' required />
+                <br />
+                <input type="submit" value="Add" />
+            </form>
         </div>
     );
 };

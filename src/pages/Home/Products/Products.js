@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Products.css'
 const Products = ({ product }) => {
-    const { id, img, name, price, description, quantity, supplier } = product
+    const { _id, img, name, price, description, quantity, supplier } = product
 
     const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ const Products = ({ product }) => {
                     <h5>Price:{price}</h5>
                     <p>Quantity: {quantity}</p>
                     <h5>Supplier: {supplier}</h5>
-                    <button onClick={() => navigateToCheckout(id)} className='btn btn-primary'>Update:{name}</button>
+                    <button onClick={() => navigateToCheckout(_id)} className='btn btn-primary'>Update:{name}</button>
                 </div>
             </div>
         </div>

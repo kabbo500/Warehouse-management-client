@@ -14,7 +14,7 @@ const ManageInventory = () => {
                 <h1 className='text-primary text-center mt-4'>Products</h1>
                 <div className='row'>
                     {
-                        products.map(product => <Products key={product.id} product={product}></Products>)
+                        products.map(product => <Products key={product._id} product={product}></Products>)
                     }
 
                 </div>
