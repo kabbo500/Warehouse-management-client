@@ -1,0 +1,11 @@
+.update-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.update-btn button {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
