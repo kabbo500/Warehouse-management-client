@@ -10,5 +10,4 @@ const useProducts = () => {
 
     return [products, setProducts];
 }
-
 export default useProducts;
