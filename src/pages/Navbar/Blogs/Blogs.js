@@ -5,7 +5,7 @@ const Blogs = () => {
         <div className='container mt-5'>
             <h1 className='text-info d-flex justify-content-center mb-5'>Blogs Page</h1>
             <article>
-                <h3 className='text-primary mt-4'>1) Difference between Authorization and Authentication?</h3>
+                <h3 className='text-primary mt-4'>1) Difference between javascript and nodejs ?</h3>
                 <div>
                     <p><b>Ans: <br /> </b> No-1: In <b>authentication</b> process the of users are checked for providing the access to the system.</p>
                     <p>While in <b>authorization</b> process, person's or user's authorities are checked for accessing the resources.</p>
