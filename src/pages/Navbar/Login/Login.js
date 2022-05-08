@@ -51,7 +51,7 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('https://sleepy-stream-54562.herokuapp.com/login', { email });
+        const { data } = await axios.post('https://gentle-gorge-41754.herokuapp.com/login', { email });
         console.log(data)
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });

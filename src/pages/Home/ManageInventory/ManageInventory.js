@@ -17,7 +17,7 @@ const ManageInventory = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `https://sleepy-stream-54562.herokuapp.com/service/${id}`;
+            const url = `https://gentle-gorge-41754.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

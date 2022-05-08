@@ -20,7 +20,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `https://sleepy-stream-54562.herokuapp.com/product/${id}`;
+            const url = `https://gentle-gorge-41754.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -39,7 +39,7 @@ const MyItems = () => {
     useEffect(() => {
         const getServices = async () => {
             const email = user.email;
-            const url = `https://sleepy-stream-54562.herokuapp.com/product?email=${email}`;
+            const url = `https://gentle-gorge-41754.herokuapp.com/product?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {

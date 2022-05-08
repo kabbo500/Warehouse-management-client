@@ -10,7 +10,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `https://sleepy-stream-54562.herokuapp.com/product`;
+        const url = `https://gentle-gorge-41754.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {
