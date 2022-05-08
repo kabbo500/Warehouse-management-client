@@ -22,7 +22,7 @@ const ManageInventory = () => {
             </div>
             <div className='d-flex justify-content-center mt-4'>
                 <p className='d-inventory'>
-                    <Link style={{ textDecoration: 'none' }} as={Link} to="/newItem">Add New Item</Link>
+                    <Link style={{ textDecoration: 'none' }} as={Link} to="/addItem">Add New Item</Link>
                 </p>
             </div>
         </div>

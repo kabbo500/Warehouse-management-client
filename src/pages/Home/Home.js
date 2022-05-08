@@ -24,7 +24,7 @@ const Home = () => {
             </div>
             <div className='d-flex justify-content-center mt-4'>
                 <p className='d-inventory'>
-                    <Link style={{ textDecoration: 'none' }} as={Link} to="/manageinventory">Manage Inventory</Link>
+                    <Link style={{ textDecoration: 'none' }} as={Link} to="/manageItem">Manage Inventory</Link>
                 </p>
             </div>
         </div>

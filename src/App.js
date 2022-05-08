@@ -12,7 +12,9 @@ import Header from './pages/Shared/Header/Header';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import Update from './pages/Navbar/Update/Update';
 import ManageInventory from './pages/Home/ManageInventory/ManageInventory';
-import NewItem from './pages/AddNewItem/NewItem';
+
+import MyItems from './pages/MyItems/MyItems';
+import AddItem from './pages/AddNewItem/AddItem';
 
 function App() {
   return (
@@ -31,8 +33,21 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
-        <Route path='/manageinventory' element={<ManageInventory></ManageInventory>}></Route>
-        <Route path='/newItem' element={<NewItem></NewItem>}></Route>
+        <Route path='/manageItem' element={
+          <RequireAuth>
+            <ManageInventory></ManageInventory>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addItem' element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+        <Route path='/myItems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>
+        }></Route>
       </Routes>
 
       <Footer></Footer>
