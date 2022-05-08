@@ -1,5 +1,6 @@
 
 import axios from 'axios';
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +20,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://sleepy-stream-54562.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -38,13 +39,21 @@ const MyItems = () => {
     useEffect(() => {
         const getServices = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/product?email=${email}`;
-            const { data } = await axios.get(url, {
-                headers: {
-                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            const url = `https://sleepy-stream-54562.herokuapp.com/product?email=${email}`;
+            try {
+                const { data } = await axios.get(url, {
+                    headers: {
+                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                });
+                setProducts(data);
+            }
+            catch (error) {
+                if (error.response.status === 401 || error.response.status === 403) {
+                    signOut(auth);
+                    navigate('/login')
                 }
-            });
-            setProducts(data);
+            }
         }
         getServices();
     }, [user])

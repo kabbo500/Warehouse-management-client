@@ -5,6 +5,8 @@ import Products from './Products/Products';
 import './Home.css'
 import useProducts from '../../hooks/useProducts';
 import Product from './Product/Product';
+import Promotion from './Promotion/Promotion';
+import CustomerReview from './CustomerReview/CustomerReview';
 
 
 const Home = () => {
@@ -27,6 +29,8 @@ const Home = () => {
                     <Link style={{ textDecoration: 'none' }} as={Link} to="/manageItem">Manage Inventory</Link>
                 </p>
             </div>
+            <Promotion></Promotion>
+            <CustomerReview></CustomerReview>
         </div>
     );
 };
