@@ -1,3 +1,40 @@
+# Project name
+ * K.K. car house ltd
+
+ # Live site link
+  * URL:[https://car-warehouse-58d62.web.app/]
+
+ # All things in this project
+
+ 1. node js 
+ 2. mongodb
+ 2. heroku
+ 4. firebase
+ 4. google authentication
+ 6. password authentication
+
+# All those things do in this project
+ * first create home page 
+ * And and two more section in homepage
+ * Then Create nav bar and banner 
+ * Create manage inventory and load all data
+ * Create server site 
+ * Then create Authentication system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
