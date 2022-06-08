@@ -4,6 +4,12 @@
  # Live site link
   * URL:[https://car-warehouse-58d62.web.app/]
 
+
+# Verified email and password
+* Email: robin295k@gmail.com
+* pass: 123456
+
+
  # All things in this project
 
  1. node js 
@@ -14,12 +20,10 @@
  6. password authentication
 
 # All those things do in this project
- * first create home page 
- * And and two more section in homepage
- * Then Create nav bar and banner 
- * Create manage inventory and load all data
- * Create server site 
- * Then create Authentication system
+ * It has two authentication systems, Google & email, and pass 
+ * Password reset and email verification system 
+ * Manage items with the private route 
+
 
 
 
