@@ -3,7 +3,8 @@ import React from 'react';
 import { Container, Nav, Navbar, } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../../../../parts-manufacturing-client/src/firebase.init';
+import auth from '../../../firebase.init';
+
 const Header = () => {
     const [user] = useAuthState(auth);
     const handleSignOut = () => {
